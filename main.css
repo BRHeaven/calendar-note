@@ -1,0 +1,110 @@
+#main {
+    width: 100%;
+    margin:  100px auto 0;
+}
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.weekdays{
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#display {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 80%;
+    padding: 0 0 10px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: aqua;
+}
+#display .days{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+#display .days p{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#display .block {
+    background-color: transparent;
+}
+
+#myModal {
+    display: grid;
+    margin: 0 10px;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #000;
+}
+#myModal .left_modal {
+    grid-column: 1 / span 2;
+}
+#myModal .right_modal {
+    grid-column: 3 / span 1;
+}
+#myModal div {
+    display: flex;
+    border: 1px solid #777;
+    align-items: center;
+    justify-content: center;
+}
+#myModal .title_modal {
+    border: 1px solid #333;
+}
+#myModal .title_modal p{
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#myModal .text{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+#myModal .time{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+#myModal .modalDays {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 1 / span 3;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+p {
+    margin: 0;
+}
+.task_daily {
+    background-color: olivedrab;
+}
